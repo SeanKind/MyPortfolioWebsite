@@ -10,6 +10,7 @@ namespace Portfolio.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Title = "Sean's Portfolio";
             return View();
         }
 
