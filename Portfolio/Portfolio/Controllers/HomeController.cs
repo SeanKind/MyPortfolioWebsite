@@ -10,20 +10,13 @@ namespace Portfolio.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Title = "Sean's Portfolio";
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Title = "Sean's Portfolio";
             return View();
         }
     }
