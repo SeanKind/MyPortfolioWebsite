@@ -1,0 +1,45 @@
+﻿body {
+}
+
+
+#CodeVideo {
+    position: fixed;
+    right: 0; 
+    bottom: 0; 
+    min-width: 100%; 
+    z-index: -1; 
+    top: 0;
+}
+
+#IndexCard {
+    width: 20rem;
+    text-align: center;
+    background-color: white;
+}
+
+
+#ColCard {
+    padding-top: 15%;
+}
+
+
+#ColCardBelow {
+    padding-top: 5%;
+}
+
+.LinkedInCenter {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.Quote {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding-top: .1vh;
+    padding-bottom: 1vh;
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+}
