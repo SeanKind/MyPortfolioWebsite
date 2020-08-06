@@ -1,9 +1,10 @@
 ﻿<title>@ViewBag.Title</title>
-
+<!--Information cards-->
 <div class="container">
+    <!--First row of cards-->
     <div class="row">
         <div class="col-sm" id="ColCard">
-            <div class="card bg-dark text-light" id="IndexCard">
+            <div class="card text-body" id="IndexCard">
                 <div class="card-body">
                     <h5 class="card-title">HTML</h5>
                     <p class="card-text">I have a lot of experience with html and writing code for websites. This page is written with html</p>
@@ -11,7 +12,7 @@
             </div>
         </div>
         <div class="col-sm" id="ColCard">
-            <div class="card bg-dark text-light" id="IndexCard">
+            <div class="card text-body" id="IndexCard">
                 <div class="card-body">
                     <h5 class="card-title">CSS</h5>
                     <p class="card-text">CSS is a great tool to help style my html pages that I create. CSS is also used on this site</p>
@@ -19,39 +20,63 @@
             </div>
         </div>
         <div class="col-sm" id="ColCard">
-            <div class="card bg-dark text-light" id="IndexCard">
+            <div class="card text-body" id="IndexCard">
                 <div class="card-body">
                     <h5 class="card-title">JavaScript</h5>
-                    <p class="card-text">I have used JavaScript to create dynamic webpages in the past. While this site uses primarily C# focused 
-                    functionality, there is a minimal amount used</p>
+                    <p class="card-text">
+                        I have used JavaScript to create dynamic webpages in the past. While this site uses primarily C# focused
+                        functionality, there is a minimal amount used
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <!--END first row of cards-->
+    <!--Second row of cards-->
     <div class="row">
         <div class="col-sm" id="ColCardBelow">
-            <div class="card bg-dark text-light" id="IndexCard">
+            <div class="card text-body" id="IndexCard">
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
+                    <h5 class="card-title">SQL</h5>
+                    <p class="card-text">I have used various SQL dialects such as SQLite and SQL Server to query databases. SQL is an important aspect of modern Full-Stack developers, especially 
+                    with how frequently you use databases</p>
                 </div>
             </div>
         </div>
         <div class="col-sm" id="ColCardBelow">
-            <div class="card bg-dark text-light" id="IndexCard">
+            <div class="card text-body" id="IndexCard">
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
+                    <h5 class="card-title">C# and .Net Framework</h5>
+                    <p class="card-text">C# is an incredibly powerful back-end programming language. I have used C# to create a variety of <a href="@Url.Action("Projects")">projects</a>
+                    including console applications, working with entity framework to access databases, and creating fully functional web pages with ASP.NET's MVC Framework</p>
                 </div>
             </div>
         </div>
         <div class="col-sm" id="ColCardBelow">
-            <div class="card bg-dark text-light" id="IndexCard">
+            <div class="card text-body" id="IndexCard">
                 <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text"></p>
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">Python is a very versatile program. I have used it primarily with the django framework to create a web application, but I understand it is a very 
+                    strong scripting language and back-end focused</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--END second row of cards-->
+<!--END information cards-->
+
+<!--Quote-->
+<div class="Quote">
+    <p style="text-align: center; margin-top: 1%;">
+        <strong>
+            <q>
+                When you don't create things, you become defined by your tastes rather than ability.
+                <br>Your tastes only narrow & exclude people.
+                <br>So create.
+            </q>
+            <br>-Jonathan Gillette<br>
+        </strong>
+    </p>
+</div>
+<!--END quote-->
