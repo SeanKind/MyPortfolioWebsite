@@ -8,15 +8,22 @@ namespace Portfolio.Controllers
 {
     public class HomeController : Controller
     {
+        string title = "Sean's Portfolio";
         public ActionResult Index()
         {
-            ViewBag.Title = "Sean's Portfolio";
+            ViewBag.Title = title;
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Title = "Sean's Portfolio";
+            ViewBag.Title = title;
+            return View();
+        }
+
+        public ActionResult Projects()
+        {
+            ViewBag.Title = title;
             return View();
         }
     }

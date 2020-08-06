@@ -1,0 +1,25 @@
+﻿body {
+}
+
+
+#CodeVideo {
+    position: fixed;
+    right: 0; 
+    bottom: 0; 
+    min-width: 100%; 
+    z-index: -1; 
+    top: 0;
+}
+
+#IndexCard {
+    width: 20rem;
+    text-align: center;
+}
+
+#ColCard {
+    padding-top: 25%;
+}
+
+#ColCardBelow {
+    padding-top: 5%;
+}

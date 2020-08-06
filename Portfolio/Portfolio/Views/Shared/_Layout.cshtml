@@ -4,14 +4,19 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
-    @Styles.Render("~/Content/css")
     @Styles.Render("~/Content/Images")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/website.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body style="background-image: url(/Content/Images/Astronaut_Abstract_Suit_1920x1080_wallpaperdo_com.jpg)">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<body>
+    <video autoplay muted loop id="CodeVideo">
+        <source src="~/Content/Images/video.mp4"/>
+    </video>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="@Url.Action("Index")">Sean's Portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
+                aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -19,15 +24,13 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="@Url.Action("Contact")">Contact <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Projects")">Projects <span class="sr-only">(current)</span></a>
+                </li>
             </ul>
         </div>
     </nav>
     
-
-
-
-
-
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
