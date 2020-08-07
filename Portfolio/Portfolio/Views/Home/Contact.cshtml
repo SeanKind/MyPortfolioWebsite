@@ -1,7 +1,50 @@
 ﻿<title>@ViewBag.Title</title>
+<body style="height: 100vh;">
+    <!--LinkedIn profile badge-->
+    <!--<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <div class="LI-profile-badge LinkedInCenter" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="seankind">
+        <a class="LI-simple-link" href='https://www.linkedin.com/in/seankind?trk=profile-badge'>Sean Coleman</a></div>-->
+    <!--END linkedIn profile badge-->
+    <!--Modal-->
+    <div class="modalCenter">
+        <!--Modal button-->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="margin: 0 auto;">
+            Contact
+        </button>
+        <!--END modal button-->
+        <!--Modal body-->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Contact me!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form method="POST">
+                        <div class="modal-body">
 
-<!--LinkedIn Profile Badge-->
-<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-<div class="LI-profile-badge LinkedInCenter" data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="seankind">
-    <a class="LI-simple-link" href='https://www.linkedin.com/in/seankind?trk=profile-badge'>Sean Coleman</a></div>
-<!-- END -->
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="inputName" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="inputEmail" name="email" placeholder="Email" required>
+                            </div>
+                            <div class="form-group row">
+                                <input type="text" class="form-control" id="inputMessage" name="message" placeholder="Message" required>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <input type="submit" class="btn btn-primary" value="Send Submission" />
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--END modal body-->
+    </div>
+    <!--END modal-->
+</body>

@@ -139,6 +139,10 @@
     <Compile Include="Migrations\202008010536284_CreateEntry.designer.cs">
       <DependentUpon>202008010536284_CreateEntry.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202008062346225_AddRequiredHtmlInput.cs" />
+    <Compile Include="Migrations\202008062346225_AddRequiredHtmlInput.designer.cs">
+      <DependentUpon>202008062346225_AddRequiredHtmlInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Entry.cs" />
     <Compile Include="Models\Submissions.cs" />
@@ -155,7 +159,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -308,6 +311,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202008010536284_CreateEntry.resx">
       <DependentUpon>202008010536284_CreateEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202008062346225_AddRequiredHtmlInput.resx">
+      <DependentUpon>202008062346225_AddRequiredHtmlInput.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

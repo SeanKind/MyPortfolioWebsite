@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Portfolio.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -20,6 +21,29 @@ namespace Portfolio.Controllers
             ViewBag.Title = title;
             return View();
         }
+        [HttpPost]
+        public ActionResult Contact(string name, string email, string message)
+        {
+            using (var db = new Submissions())
+            {
+                var entry = new Entry();
+                entry.Name = name;
+                entry.Email = email;
+                entry.Message = message;
+                entry.Date = DateTime.Now;
+                if (ModelState.IsValid && entry.Name != null && entry.Email != null && entry.Message != null)
+                {
+                    db.Entries.Add(entry);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    return View("Contact");
+                }
+            }
+        }
+
 
         public ActionResult Projects()
         {
