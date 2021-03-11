@@ -10,27 +10,27 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @*<video autoplay muted loop id="CodeVideo">
+    @*<video autoplay muted loop id="CodeVideo" style="position: fixed; right: 0; bottom: 0; min-width: 100%; z-index: -1; top: 0;">
         <source src="~/Content/Images/video.mp4"/>
     </video>*@
-    <img src="~/Content/Images/code.jpg" style="position: fixed; right: 0; bottom: 0; min-width: 100%; z-index: -1; top: 0;" />
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <img src="~/Content/Images/wolf.jpg" style="position: fixed; right: 0; bottom: 0; min-width: 100%; z-index: -1; top: 0;" />
+    <!--<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style=" background-color: #15161A;">
         <a class="navbar-brand" href="@Url.Action("Index")">Sean's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
                 aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
+            <ul class="navbar-nav">-->
+                @*<li class="nav-item active">
                     <a class="nav-link" href="@Url.Action("Contact")">Contact <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="@Url.Action("Projects")">Projects <span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
+                </li>*@
+            <!--</ul>
         </div>
-    </nav>
+    </nav>-->
     
     @RenderBody()
     @Scripts.Render("~/bundles/jquery")

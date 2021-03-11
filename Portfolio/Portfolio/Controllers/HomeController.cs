@@ -16,11 +16,11 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Title = title;
-            return View();
-        }
+        //public ActionResult Contact()
+        //{
+        //    ViewBag.Title = title;
+        //    return View();
+        //}
         [HttpPost]
         public ActionResult Contact(string name, string email, string message)
         {
@@ -41,14 +41,15 @@ namespace Portfolio.Controllers
                 {
                     return View("Contact");
                 }
+
             }
         }
 
 
-        public ActionResult Projects()
-        {
-            ViewBag.Title = title;
-            return View();
-        }
+        //public ActionResult Projects()
+        //{
+        //    ViewBag.Title = title;
+        //    return View();
+        //}
     }
 }
