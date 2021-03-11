@@ -10,9 +10,10 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <video autoplay muted loop id="CodeVideo">
+    @*<video autoplay muted loop id="CodeVideo">
         <source src="~/Content/Images/video.mp4"/>
-    </video>
+    </video>*@
+    <img src="~/Content/Images/code.jpg" style="position: fixed; right: 0; bottom: 0; min-width: 100%; z-index: -1; top: 0;" />
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="@Url.Action("Index")">Sean's Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
