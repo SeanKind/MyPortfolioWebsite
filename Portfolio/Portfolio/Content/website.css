@@ -90,3 +90,26 @@ h3 {
     margin-right: 20%;
     font-weight: bold;
 }
+
+.aboutImages {
+    max-height: 200px;
+    flex: 1;
+    max-width: 100px;
+}
+/*.aboutImages:nth-child(1){
+    height: 100px;
+    width: 100px;
+}
+.aboutImages:nth-child(2){
+    height: 100px;
+    width: 100px; 
+}
+.aboutImages:nth-child(3){
+    height: 100px;
+    width: 100px;
+}*/
+.imageDiv{
+    max-height: 200px;
+    display: flex;
+    max-width: 100px;
+}
